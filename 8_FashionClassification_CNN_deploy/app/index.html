@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <title>DL API</title>
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Sistema de reconocimiento de imágenes</h1>
+
+     <!-- Form para enviar la imagen al modelo -->
+    <form action="{{url_for('predict')}}" method="post" enctype="multipart/form-data">
+
+    	<input type="file" name="imagen">
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Subir</button>
+    </form>
+
+   <br>
+   <br>
+   <h3>Categoria: {{ clase }}</h3>
+
+ </div>
+
+
+
+</body></html>
